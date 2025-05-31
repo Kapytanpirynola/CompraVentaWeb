@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPRA VENTA WEB</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ofertas de Tiendas</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>HOLA MUNDO ESTA ES LA PAGINA DE COMPRA VENTA MAS PERRRONA QUE VAN A VER!! xD</h1>
-    
+  <header>
+    <h1>Ofertas de Tiendas</h1>
+    <input type="text" placeholder="Buscar productos...">
+  </header>
+
+  <main class="product-grid">
+    <!-- Producto ejemplo -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Producto">
+      <h2 class="product-title">Nombre del Producto</h2>
+      <p class="product-price">$199.99</p>
+      <p class="product-store">Tienda: Super Tienda</p>
+      <button>Ver Oferta</button>
+    </div>
+
+    <!-- Puedes duplicar esta tarjeta para más productos -->
+    <div class="product-card">
+      <img src="https://via.placeholder.com/200" alt="Producto">
+      <h2 class="product-title">Otro Producto</h2>
+      <p class="product-price">$299.99</p>
+      <p class="product-store">Tienda: Mega Outlet</p>
+      <button>Ver Oferta</button>
+    </div>
+
+    <!-- Agrega más productos aquí -->
+  </main>
 </body>
 </html>
