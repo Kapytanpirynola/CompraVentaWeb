@@ -79,3 +79,42 @@ main.product-grid {
 .product-card button:hover {
   background-color: #ddb347;
 }
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Carrusel */
+/* ...existing code... */
+.carousel .slides img {
+  width: 100%;
+  height: 250px;      /* Ajusta la altura según lo que necesites */
+  object-fit: contain; /* Muestra la imagen completa sin recortar */
+  display: block;
+  margin: 0 auto;
+  background: #fff;   /* Opcional: fondo blanco para imágenes más pequeñas */
+}
+/* ...existing code... */
+
+.slides {
+  display: flex;
+  width: 400%; /* 4 imágenes */
+  animation: slide 16s infinite;
+}
+
+
+/* Animación automática */
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  20%  { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  45%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  70%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
+  95%  { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
